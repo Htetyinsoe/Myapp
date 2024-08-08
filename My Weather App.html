@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Weather App</title>
+    <style>
+      body {
+        background-color: #d5f2f8;
+      }
+
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        margin-top: 25px;
+        color: #d5f2f8;
+        font-size: 22px;
+      }
+
+      p {
+        text-align: center;
+        color: #d5f2f8;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 2;
+      }
+
+      footer {
+        text-align: center;
+      }
+
+      a {
+        text-decoration: none;
+        color: #024f55;
+      }
+
+      sup {
+        font-size: large;
+        font-weight: 900;
+        color: #d5f2f8;
+      }
+
+      strong {
+        color: #024f55;
+      }
+
+      #search {
+        font-size: 18px;
+        padding: 12px;
+        margin: 0 20px;
+        border-radius: 8px;
+        border: none;
+        background-color: #d5f2f8;
+      }
+
+      #submit {
+        font-size: 18px;
+        padding: 12px;
+        margin: 35px 20px;
+        border-radius: 8px;
+        border: none;
+        background-color: #d5f2f8;
+        color: #024f55;
+        transition: all 150ms ease-in-out;
+      }
+
+      #submit:hover {
+        cursor: pointer;
+        background-color: #5cdfee;
+        color: #d5f2f8;
+      }
+
+      .container {
+        background-color: #3c949e;
+        max-width: 600px;
+        margin: 100px auto;
+        border-radius: 10px;
+        padding: 5px;
+      }
+
+      .logo {
+        width: 60px;
+        margin: 35px;
+        border-radius: 50px;
+        border: none;
+        background-color: #d5f2f8;
+      }
+
+      .search-container {
+        margin: 5px 10px;
+        text-align: center;
+        max-width: 80% auto;
+      }
+
+      .city-temp {
+        text-align: center;
+      }
+
+      .number {
+        font-size: 65px;
+        font-weight: 800;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #d5f2f8;
+      }
+
+      .box {
+        display: flex;
+        text-align: center;
+        column-gap: 45px;
+      }
+
+      .Weather {
+        background-color: #d5f2f8;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+        color: #024f55;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .Weather:hover {
+        transform: scale(1.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="image/My logo.png" alt="logo" class="logo" />
+      <div class="search-container">
+        <input type="search" placeholder="Enter a City" id="search" />
+        <input type="submit" value="search" id="submit" />
+      </div>
+      <div class="city-temp"><span class="number">17</span><sup>°C </sup></div>
+      <h1>Thaton📌</h1>
+
+      <p>
+        Monday 20:48, clear sky <br />
+        Humidity:<strong>77%</strong> Wind: <strong>7.72km/hr</strong>
+      </p>
+      <div class="box">
+        <div class="Weather">
+          <div>Mon</div>
+          ☀️
+          <div><strong>19°</strong> 13°</div>
+        </div>
+        <div class="Weather">
+          <div>Tue</div>
+          🌥️
+          <div><strong>18°</strong> 14°</div>
+        </div>
+        <div class="Weather">
+          <div>Wed</div>
+          🌥️
+          <div><strong>21°</strong> 16°</div>
+        </div>
+        <div class="Weather">
+          <div>Thu</div>
+          🌨️
+          <div><strong>16°</strong> 13°</div>
+        </div>
+        <div class="Weather">
+          <div>Fri</div>
+          🌥️
+          <div><strong>19°</strong> 12°</div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      This project was coded by
+      <a href="mailto:htetyysoe@gmail.com">Htet Yin Yin Soe</a>💻
+    </footer>
+  </body>
+</html>
